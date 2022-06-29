@@ -1,10 +1,21 @@
-import { View, Text } from 'react-native'
+import { View, Text, ImageBackground } from 'react-native'
 import React from 'react'
 
-export default function index() {
+import styles from './styles'
+
+export default function CarItem() {
   return (
-    <View>
-      <Text>index</Text>
-    </View>
-  )
+    
+      <View style={styles.carContainer}>
+        <ImageBackground
+          style={styles.image}
+          source={require("../../assets/images/ModelS.jpeg")}
+        />
+        <View style={styles.titles}>
+          <Text style={styles.title}>Model S</Text>
+          <Text style={styles.subTitle}>starting at 79,889$</Text>
+        </View>
+      </View>
+    
+  );
 }
