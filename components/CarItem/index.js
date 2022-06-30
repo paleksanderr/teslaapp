@@ -15,7 +15,7 @@ export default function CarItem() {
         <Text style={styles.title}>Model S</Text>
         <Text style={styles.subTitle}>starting at 79,889$</Text>
       </View>
-      <StyleButton />
+      <StyleButton type='primary' />
     </View>
   );
 }

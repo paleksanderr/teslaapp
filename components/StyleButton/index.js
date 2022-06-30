@@ -3,7 +3,11 @@ import React from 'react'
 
 import styles from './styles'
 
-const StyleButton = () => {
+const StyleButton = (props) => {
+
+  const type = props.type;
+  const backgroundColor = type === 'primary' ? '#00a8ff' : '#fff';
+
   return (
     <View style={styles.container}>
       <Pressable
