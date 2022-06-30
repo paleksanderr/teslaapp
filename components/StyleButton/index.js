@@ -5,14 +5,14 @@ import styles from './styles'
 
 const StyleButton = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Pressable
       style={styles.button}
       onPress={() => {
-        alert('You tapped the button!')
+        console.warn('pressed')
       }}
       >
-
+      <Text style={styles.buttonText}>Custom order</Text>
       </Pressable>
     </View>
   )
