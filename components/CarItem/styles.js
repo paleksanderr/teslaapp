@@ -35,7 +35,14 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "300",
     color: "#5c5e62",
+    textTransform: 'capitalize',
   },
+  subTitleCTA: {
+  
+    textDecorationLine: "underline",
+    fontWeight: "400",
+  },
+  
 })
 
 export default styles;

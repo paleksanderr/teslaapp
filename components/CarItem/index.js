@@ -6,7 +6,7 @@ import StyleButton from "../StyleButton/index";
 
 export default function CarItem(props) {
 
-    const { name , tagline, image } = props;
+    const { name , tagline, image, taglineCTA } = props;
 
   return (
     <View style={styles.carContainer}>
@@ -16,7 +16,11 @@ export default function CarItem(props) {
       />
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>
-        <Text style={styles.subTitle}>{tagline}</Text>
+        <Text style={styles.subTitle}>
+            {tagline} {' '}
+        <Text style={styles.subTitleCTA}>{taglineCTA}</Text>
+        </Text>
+        
       </View>
       <View style={styles.buttonsContainer}>
         <StyleButton
