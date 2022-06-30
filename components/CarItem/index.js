@@ -15,7 +15,20 @@ export default function CarItem() {
         <Text style={styles.title}>Model S</Text>
         <Text style={styles.subTitle}>starting at 79,889$</Text>
       </View>
-      <StyleButton type='primary' />
+      <StyleButton
+        type="primary"
+        content={"Custom Order"}
+        onPress={() => {
+          console.warn("Custom order was pressed");
+        }}
+      />
+      <StyleButton
+        type="secondary"
+        content={"Existing inventory"}
+        onPress={() => {
+          console.warn("existing inventory was pressed");
+        }}
+      />
     </View>
   );
 }
