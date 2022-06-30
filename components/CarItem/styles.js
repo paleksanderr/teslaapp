@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   buttonsContainer: {
     position: 'absolute',
     bottom: 50,
-    wigth: "100%",
+    width: "100%",
   },
   carContainer: {
     width: "100%",

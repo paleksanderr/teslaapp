@@ -6,7 +6,10 @@ import CarItem from "./components/CarItem/index.js";
 export default function App() {
   return (
     <View style={styles.container}>
-        <CarItem />
+        <CarItem 
+        name={'Model X'} 
+        tagline={'starts from 99,999'} 
+        image={require('./assets/images/ModelX.jpeg')}/>
       <StatusBar style="auto" />
     </View>
   );
